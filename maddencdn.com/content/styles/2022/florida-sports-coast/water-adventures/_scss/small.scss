@@ -1,0 +1,315 @@
+/** COMPILED FROM SCSS SOURCE. DO NOT EDIT DIRECTLY */
+
+//
+// SCSS SOURCE FILE - comment above will be rendered to css file - please
+//    disregard it and only edit this file.
+//
+
+// the vars
+@import "_mm_vars";
+
+///////////////////////////////////
+// body
+///////////////////////////////////
+
+html, body { }
+
+///////////////////////////////////
+// mobile, tablet test and disable parallax (jquery tests for this)
+///////////////////////////////////
+
+#isSmall { visibility: hidden; float: left; }
+#isMedium { visibility: hidden; float: none; }
+#isLarge { visibility: hidden; float: none; }
+
+///////////////////////////////////
+// general layout
+///////////////////////////////////
+
+h2 {
+	position: relative;
+	font-size: 2.5em;
+	margin-bottom: 1.0em;
+	
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50px;
+		height: 70vw;
+		background: transparent url(#{$img_path}/art-wave-sm.png) repeat-y left top;
+		transform: translate(35vw, 58%) rotate(90deg);
+	}
+}
+
+///////////////////////////////////
+// top bar
+///////////////////////////////////
+
+.top {
+    height: 60px;
+	
+	.topLogo {
+		top: 5px;
+	
+		img {
+			height: 50px;
+		}
+	}
+	
+	#nav_share {
+		right: 15px;
+		top: 15px;
+	}	
+}
+
+///////////////////////////////////
+// large chapter images
+////////////////////////////////// /
+
+.chapterImage {
+	
+    &.c0 {
+		height: 90vh;
+		margin-top: 60px;
+        background: transparent url(#{$img_path}/c0_main-hero_sm_ph.jpg) no-repeat center center scroll;
+        background-size: cover;
+		
+		&.show {
+			background: transparent url(#{$img_path}/c0_main-hero_sm.jpg) no-repeat center center scroll;
+			background-size: cover;
+		}
+
+		.titleIcon {
+			width: 60vw;
+			margin-top: -40vh; 
+		}
+    }
+
+    &.c1, &.c2 {
+        height: auto;
+		background: transparent url(#{$img_path}/art-wave-lg-blue.png) no-repeat top center scroll;
+        background-size: 100% auto;
+		
+		.hero {
+			width: 94vw;
+			margin: 3.0em auto 0 auto;
+		}
+		
+		.sectionTitle {
+			left: 5vw !important;
+			right: 5vw !important;
+			width: 90vw;
+			max-width: 90vw;
+			margin-top: 2.0em;
+		}
+    }
+}
+
+///////////////////////////////////
+// article content
+///////////////////////////////////
+
+section {
+    padding: 1.5em 0;
+	width: 100%;
+	
+    &.sectionThrill, &.sectionChill {
+        .text {
+			margin-bottom: 0;
+			
+			&.centered {
+				margin-top: 0;
+				
+				.wrap {
+					width: 100vw;
+					max-width: 100vw;
+				}
+			}
+        }
+		
+        .pullQuote {
+			margin-bottom: 2.0rem;
+			
+            p {
+                color: $darkBlue;
+            }
+        }
+    }
+    .text {
+		
+        &.right, &.left {
+            width: 100%;
+            padding-left: 0;
+            border: none;
+        }
+
+		h2 {
+			width: 90vw;
+			margin-left: 5vw;
+		}
+
+        p {
+            font-size: 1.2em;
+			width: 90vw;
+			margin-left: 5vw;
+        }
+    }
+
+    .images {
+        width:100%;
+        display: block;
+    }
+
+    .pullQuote {
+        margin: 0 auto;
+		
+        p {
+            font-size: 11vw;
+            padding: 0 40px;
+
+            &:before {
+                top:-10px;
+                width: 50px;
+                height: 40px;
+            }
+            &:after {
+                bottom: -10px;
+                width: 50px;
+                height: 40px;
+            }
+
+        }
+    }
+}
+
+
+///////////////////////////////////
+// featured content
+///////////////////////////////////
+
+.mobileOnly { display: block !important; }
+.noMobile { display: none !important; }
+
+.floatingElement:not(.hero) { display: none; }
+
+.navIcons {
+	white-space: auto;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	margin: 2.0rem auto;
+
+	.cyaBtn {
+		margin: 0 auto;
+	}
+	
+	#ctOr {
+		margin: 1.0rem auto;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+		font-size: 1.5rem;
+		line-height: 2.6rem;
+	}
+
+	
+}	
+
+.chapterNav {
+    .chapterNavWrapper {
+		width: 100vw;
+		
+		p.chooseText {
+			width: 90%;
+		}
+		
+		h2 {
+			font-size: 2.5em;
+			
+			&:before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				background: none;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -30%;
+				left: 40%;
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+}
+
+.ctaWrapper {
+    padding: 0 2.5% 50px;
+	
+    a {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        padding: 1.0em 1.5em;
+    }
+}
+
+.lockedChooser {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	
+	p {
+		text-transform: uppercase;
+		font-weight: bold;
+		width: 40%;
+	}
+	
+	div {
+		width: calc(25% - 20px);
+		margin: 10px;
+		color: $darkBlue;
+		background: #fff;
+		padding: 5px;
+		cursor: pointer;
+	}
+}
+
+///////////////////////////////////
+// footer
+///////////////////////////////////
+
+.footer {
+	margin-bottom: 2.0em;
+	
+    .alsoLike {
+        font-size: 2em;
+        padding: 1em 0;
+    }
+
+    .alsoLikeLinkWrap {
+        width: 90%;
+        margin: 0 5%;
+
+        .linkWrapper {
+            margin: 0 auto 1em;
+            display: block;
+            width: 100%;
+            padding: 0;
+            height: 51vw;
+            max-height: 200px;
+        }
+
+    }
+}

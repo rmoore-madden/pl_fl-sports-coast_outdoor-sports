@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "adfaa5035aefd73f47fd86c7c95e88f3",
+    "packages": [
+        {
+            "name": "delboy1978uk/image",
+            "version": "dev-maddenmedia-crop-and-focus",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maddenmedia/image.git",
+                "reference": "3e52c7dcb29865e2f6958cd972ef3ac4819cd11a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maddenmedia/image/zipball/3e52c7dcb29865e2f6958cd972ef3ac4819cd11a",
+                "reference": "3e52c7dcb29865e2f6958cd972ef3ac4819cd11a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "codeception/module-asserts": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Del\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Derek Stephen McLean",
+                    "email": "delboy1978uk@gmail.com"
+                }
+            ],
+            "description": "PHP image class",
+            "support": {
+                "source": "https://github.com/maddenmedia/image/tree/maddenmedia-crop-and-focus"
+            },
+            "time": "2021-05-12T00:52:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "delboy1978uk/image": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

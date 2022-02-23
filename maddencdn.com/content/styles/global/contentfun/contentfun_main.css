@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+body {
+  margin: 0;
+}
+
+.chapterImage {
+  margin-top: 10%;
+  width: 100%;
+  z-index: 500;
+  text-align: center;
+}
+
+.chapterImage .centerTitle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  background: #0059bd url(http://maddencdn.com/content/images/2015/omaha/foodies/bg-diag-blue.png) repeat top left scroll;
+  padding: 40px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.2em;
+  text-shadow: 2px 3px 0 #000000;
+  letter-spacing: 1px;
+}
+
+.chapter {
+  margin: 0 0 25%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 600;
+  text-align: center;
+}
+
+.chapter.lightbox .imageRow {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  /* adding height to imageRow and img was causing a weird stretching effect in Safari, so it was removed */
+}
+
+.chapter.lightbox .image a {
+  outline: none;
+}
+
+.chapter.lightbox .image a img {
+  width: 20%;
+  float: left;
+  opacity: 0.5;
+  -webkit-box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, 0.8);
+}
+
+.chapter.lightbox .image a img:hover {
+  opacity: 1;
+}
+
+.chapter.clickablemap {
+  position: relative;
+  display: table;
+  padding: 0 0 30px 0;
+}
+
+.chapter.clickablemap .MapWrap {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.chapter.clickablemap .MapWrap .Map {
+  float: left;
+  z-index: 99;
+  width: 100%;
+  height: auto;
+}
+
+.chapter.clickablemap .MapWrap .MapOverlay {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+}
+
+.chapter.clickablemap .mapMeta {
+  display: none;
+}
+
+.chapter.slideshow #slideshow {
+  display: block;
+  opacity: 1 !important;
+}
+
+.chapter.slideshow #slideshow img.slideImage {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.chapter.slideshow #slideshow img.slideControl {
+  position: relative;
+  margin: 50% 3px 0 3px;
+  width: 100px;
+  height: auto;
+  z-index: 500;
+}
+
+.chapter.slideshow #slideshow img.slideControl.prev {
+  float: left;
+}
+
+.chapter.slideshow #slideshow img.slideControl.next {
+  float: right;
+}
+
+.chapter.instagramfeed {
+  text-align: right;
+}
+
+.chapter.instagramfeed a.widgetInstagramNav {
+  opacity: .5;
+}
+
+.chapter.instagramfeed #widgetInstagram img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chapter.instagramfeed a.widgetInstagramNav:hover {
+  opacity: 1.0;
+}
+
+.chapter.instagramfeed #widgetInstagramLogo {
+  margin: 0 140px 20px 0;
+}
+
+.chapter.instagramfeed #widgetInstagram {
+  float: right;
+  border-style: solid;
+  border-width: 20px;
+  border-color: white;
+  -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.4);
+  width: 350px;
+  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
+  margin-right: 20px;
+}
+
+.chapter.instagramfeed #widgetInstagramCaption {
+  float: right;
+  text-align: left;
+  width: 350px;
+  max-width: 350px;
+  font-size: 0.8em;
+  font-weight: normal;
+  opacity: 0.5;
+  margin: 20px 40px 0 0;
+  padding-top: 10px;
+  clear: both;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chapter.map {
+  height: 400px;
+  width: 100%;
+  padding: 0px;
+}
+/*# sourceMappingURL=contentfun_main.css.map */

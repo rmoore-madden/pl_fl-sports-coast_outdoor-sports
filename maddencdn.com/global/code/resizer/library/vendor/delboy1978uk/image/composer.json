@@ -1,0 +1,25 @@
+{
+    "name": "delboy1978uk/image",
+    "description": "PHP image class",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Derek Stephen McLean",
+            "email": "delboy1978uk@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "codeception/codeception": "*",
+        "codeception/module-asserts": "^1.1"
+    },
+    "autoload":
+    {
+        "psr-4":{
+            "Del\\": "src/"
+        }
+    }
+}

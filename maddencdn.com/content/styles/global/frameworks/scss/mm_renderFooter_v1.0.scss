@@ -1,0 +1,81 @@
+//
+// Sets up the footer for content story
+//
+// @id		$Id: mm_renderFooter_v1.0.scss 81 2016-11-02 00:12:39Z brosenbaum $
+// @version	$Revision: 1 $
+//
+//
+// Variables used:
+// $font_body:						Font Family;
+// $text_color_default: 			Default text color;
+// $topBarHeight:					Overall height of the top bar;
+// $topBarMobileHeight:				Overall height of the top bar in mobile;
+// $defaultWidthHeight:				Default height and width of the share/control buttons;
+// $defaultTopBarColorBG: 			Background color for the top bar; 
+// $defaultTopBarColorControlOff:	Background color for the buttons when they are off;
+// $defaultTopBarColorControlOn::	Background color for the buttons when they are on;
+// $defaultTopBarColorTextOff: 		Text color for when they are off;
+// $defaultTopBarColorTextOn:		Text color for when they are on;
+// $progressBarHeight:				Height of the progress bar;
+// $defaultTopBarColorProgressBG:	Color of progress bar;
+// $defaultTopBarColorProgressBar:	Progress bar background color;
+
+
+@mixin renderFooter () {
+		
+	.footer {
+		width: 100%;
+		text-align: center;
+		padding: 0 0 2.0em 0;
+		z-index: 1000;
+		
+		
+		a {
+			text-decoration: none;
+		}
+		
+		.alsoLike {
+
+		}
+		
+		.alsoLikeLinkWrap {
+			overflow: hidden;
+			width: 100%;
+			margin: 0;
+			text-align: center;
+			
+			.linkWrapper {
+				position: relative;
+				padding-bottom: 11%;
+				width: 20%;
+				max-width: 300px;
+				margin: 0 20px;
+				display: inline-block;
+			}
+			
+			.rLink {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				display: inline-block;
+				left: 0;
+				top: 0;
+				background-color: #000;
+				
+				.linkTitleWrapper {
+					display: table;
+					position: absolute;
+					width: calc(100% - 20px);
+					bottom: 0;
+					padding: 10px;
+					
+					.linkTitle {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	} 	
+	
+}	

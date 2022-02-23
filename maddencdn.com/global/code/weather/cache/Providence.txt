@@ -1,0 +1,1 @@
+{"temp":29,"icon":"13d","conditions":"Snow","conditionsCode":601}

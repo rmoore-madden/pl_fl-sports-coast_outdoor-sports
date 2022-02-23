@@ -1,0 +1,1 @@
+{"temp":75,"icon":"50d","conditions":"Mist","conditionsCode":701}

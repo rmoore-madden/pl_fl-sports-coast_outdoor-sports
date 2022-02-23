@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/maddenmedia/image.git"
+        }
+    ],
+    "require": {
+        "delboy1978uk/image": "dev-maddenmedia-crop-and-focus"
+    }
+}

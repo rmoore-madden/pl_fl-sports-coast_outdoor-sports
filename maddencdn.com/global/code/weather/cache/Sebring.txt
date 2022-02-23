@@ -1,0 +1,1 @@
+{"temp":74,"icon":"01d","conditions":"Clear","conditionsCode":800}

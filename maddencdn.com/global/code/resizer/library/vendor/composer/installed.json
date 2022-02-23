@@ -1,0 +1,52 @@
+{
+    "packages": [
+        {
+            "name": "delboy1978uk/image",
+            "version": "dev-maddenmedia-crop-and-focus",
+            "version_normalized": "dev-maddenmedia-crop-and-focus",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maddenmedia/image.git",
+                "reference": "3e52c7dcb29865e2f6958cd972ef3ac4819cd11a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maddenmedia/image/zipball/3e52c7dcb29865e2f6958cd972ef3ac4819cd11a",
+                "reference": "3e52c7dcb29865e2f6958cd972ef3ac4819cd11a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "codeception/module-asserts": "^1.1"
+            },
+            "time": "2021-05-12T00:52:37+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Del\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Derek Stephen McLean",
+                    "email": "delboy1978uk@gmail.com"
+                }
+            ],
+            "description": "PHP image class",
+            "support": {
+                "source": "https://github.com/maddenmedia/image/tree/maddenmedia-crop-and-focus"
+            },
+            "install-path": "../delboy1978uk/image"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

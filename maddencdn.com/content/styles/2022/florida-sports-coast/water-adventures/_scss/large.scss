@@ -1,0 +1,125 @@
+/** COMPILED FROM SCSS SOURCE. DO NOT EDIT DIRECTLY */
+
+//
+// SCSS SOURCE FILE - comment above will be rendered to css file - please
+//    disregard it and only edit this file.
+//
+
+// the vars
+@import "_mm_vars";
+
+///////////////////////////////////
+// body
+///////////////////////////////////
+
+html, body { }
+
+///////////////////////////////////
+// mobile, tablet test and disable parallax (jquery tests for this)
+///////////////////////////////////
+
+#isSmall { visibility: hidden; float: none; }
+#isMedium { visibility: hidden; float: none; }
+#isLarge { visibility: hidden; float: left; }
+
+///////////////////////////////////
+// top bar
+///////////////////////////////////
+
+
+
+///////////////////////////////////
+// large chapter images
+///////////////////////////////////
+
+.chapterImage {
+
+    &.c0 {
+        background: transparent url(#{$img_path}/c0_main-hero_ph.jpg) no-repeat center center scroll;
+        background-size: cover;
+		
+		&.show {
+			background: transparent url(#{$img_path}/c0_main-hero.jpg) no-repeat center center scroll;
+			background-size: cover;
+		}
+    }
+
+    &.c1, &.c2 {
+        background: transparent url(#{$img_path}/art-wave-lg-blue.png) no-repeat top center scroll;
+        background-size: 100% auto;
+    }
+}
+
+///////////////////////////////////
+// article content
+///////////////////////////////////
+
+section {
+    &.sectionThrill, &.sectionChill {
+        .text {
+			
+			&.centered {
+				
+				.wrap {
+					width: 50vw;
+					max-width: 800px;
+				}
+
+				.floatingElement {
+					width: 15vw;
+					max-width: 200px;
+					
+					&#navDE3 { margin: 0 3vw 0 0; right: 0; }
+					&#navDE4 { margin: 0 0 0 3vw; left: 0; }
+				}
+			}
+			
+            &.right {
+                background: transparent url(#{$img_path}/art-wave-sm.png) repeat-y left top;
+				padding-left: $sectionPadding;
+            }
+			
+            &.left {
+                background: transparent url(#{$img_path}/art-wave-sm.png) repeat-y right top;
+				padding-right: $sectionPadding;
+            }
+        }
+    }
+}
+
+///////////////////////////////////
+// featured content
+///////////////////////////////////
+
+.chapterNav {
+
+	.floatingElement {
+		width: 200px;
+		height: auto;
+		
+		&:first-of-type { margin-left: 75px; margin-right: 0; }
+		&:last-of-type { margin-left: 0; margin-right: 75px; }
+
+		@media screen and (max-width: 1200px) {
+			width: 150px !important;
+
+			&:first-of-type { margin-left: 50px; margin-right: 0; }
+			&:last-of-type { margin-left: 0; margin-right: 50px; }
+		}
+	}
+	
+}
+
+///////////////////////////////////
+// footer
+///////////////////////////////////
+
+.footer {
+    .alsoLikeLinkWrap {
+        max-height: 250px;
+        overflow: hidden;
+        .rLink {
+            max-height: 200px;
+        }
+    }
+}

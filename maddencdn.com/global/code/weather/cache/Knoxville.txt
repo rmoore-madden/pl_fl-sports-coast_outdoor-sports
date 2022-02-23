@@ -1,0 +1,1 @@
+{"temp":63,"icon":"04d","conditions":"Clouds","conditionsCode":804}

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+/* Slider */
+.slick-loading .slick-list { background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face { font-family: "slick"; src: url("./fonts/slick.eot"); src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); font-weight: normal; font-style: normal; }
+
+/* Arrows */
+.slick-prev, .slick-next { position: absolute; display: block; height: 100px; width: 40px; min-width: 20px; line-height: 0px; font-size: 0px; cursor: pointer; color: transparent; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); padding: 0; border: none; outline: none; z-index: 10; }
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
+
+.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 20px; line-height: 1; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev { font-weight: 900; left: 25px; background: transparent url(https://www.maddencdn.com/global/images/slideshow-arrow-prev.png) no-repeat center center scroll; background-size: contain; /** &:before { content: $slick-prev-character; [dir="rtl"] & { content: $slick-next-character; } } */ }
+
+.slick-prev:hover, .slick-prev:focus { outline: none; background: transparent url(https://www.maddencdn.com/global/images/slideshow-arrow-prev.png) no-repeat center center scroll; background-size: contain; }
+
+[dir="rtl"] .slick-prev { left: auto; right: -25px; }
+
+.slick-next { font-weight: 900; right: 25px; background: transparent url(https://www.maddencdn.com/global/images/slideshow-arrow-next.png) no-repeat center center scroll; background-size: contain; /** &:before { content: $slick-next-character; [dir="rtl"] & { content: $slick-prev-character; } } */ }
+
+.slick-next:hover, .slick-next:focus { outline: none; background: transparent url(https://www.maddencdn.com/global/images/slideshow-arrow-next.png) no-repeat center center scroll; background-size: contain; }
+
+[dir="rtl"] .slick-next { left: -25px; right: auto; }
+
+/* Dots */
+.slick-dotted.slick-slider { margin-bottom: 30px; }
+
+.slick-dots { position: absolute; z-index: 3; bottom: 15px; list-style: none; display: block; text-align: center; padding: 0; margin: 0; width: 100%; }
+
+.slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
+
+.slick-dots li button { border: 0; display: block; height: 20px; width: 20px; outline: none; line-height: 0px; font-size: 0px; background: transparent !important; color: transparent; padding: 5px; cursor: pointer; }
+
+.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
+
+.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-size: 55px; line-height: 20px; text-align: center; color: white; opacity: 0.25; }
+
+.slick-dots li.slick-active button:before { color: white; opacity: 0.75; }
+
+.mmslide { height: 80vh; position: relative; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; overflow: hidden; }
+
+@media only screen and (max-width: 1024px) { .mmslide { background-attachment: scroll; } }
+
+.mmslide:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5))); background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.5) 100%); background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.5) 100%); background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%); }
+
+.mmslide .mmslideImg { position: absolute; top: 0; left: 0; z-index: 1; -ms-flex-negative: 0; flex-shrink: 0; min-width: 100%; min-height: 100%; }
+
+.mmslide .mmslideText { position: absolute; width: calc(100% - 200px); left: 100px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: 3; max-width: 600px; color: white; }
+
+.mmslide .mmslideText h1, .mmslide .mmslideText h2, .mmslide .mmslideText h3 { margin: 0; line-height: 1em; color: inherit; }
+
+.mmslide .mmslideText p { margin-top: 0; }
+
+.mmslide .mmslideText a.button { background: none; border: 2px solid white; color: white; font-weight: normal; }
+
+.mmslide .mmslideText a.button:hover { background: #ffffff3b; }
+
+@media only screen and (max-width: 786px) { .mmslide .mmslideText { width: 95%; left: 5%; } }
+
+.slick-slider .slick-track { -webkit-transform: none !important; -ms-transform: none !important; transform: none !important; }

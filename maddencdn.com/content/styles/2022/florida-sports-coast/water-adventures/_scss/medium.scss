@@ -1,0 +1,147 @@
+/** COMPILED FROM SCSS SOURCE. DO NOT EDIT DIRECTLY */
+
+//
+// SCSS SOURCE FILE - comment above will be rendered to css file - please
+//    disregard it and only edit this file.
+//
+
+// the vars
+@import "_mm_vars";
+
+///////////////////////////////////
+// body
+///////////////////////////////////
+
+html, body { }
+
+
+///////////////////////////////////
+// mobile, tablet test and disable parallax (jquery tests for this)
+///////////////////////////////////
+
+#isSmall { visibility: hidden; float: none; }
+#isMedium { visibility: hidden; float: left; }
+#isLarge { visibility: hidden; float: none; }
+
+///////////////////////////////////
+// large chapter images
+///////////////////////////////////
+
+.chapterImage {
+
+    &.c0 {
+        background: transparent url(#{$img_path}/c0_main-hero_ph.jpg) no-repeat center center scroll;
+        background-size: cover;
+		
+		&.show {
+			background: transparent url(#{$img_path}/c0_main-hero.jpg) no-repeat center center scroll;
+			background-size: cover;
+		}
+    }
+
+    &.c1, &.c2 {
+        background: transparent url(#{$img_path}/art-wave-lg-blue.png) no-repeat top center scroll;
+        background-size: 100% auto;
+
+		.sectionTitle {
+			max-width: 350px;
+		}
+    }
+}
+
+///////////////////////////////////
+// article content
+///////////////////////////////////
+
+section {
+    padding: 2em 0;
+	width: 80%;
+
+    &.sectionThrill, &.sectionChill {
+        .text {
+			&.centered {
+				.floatingElement {
+					width: 100px;
+					
+					&#navDE3 { margin: 0; right: 0; }
+					&#navDE4 { margin: 0; left: 0; }
+				}
+			}
+		}
+	}
+	
+    .text {
+        &.right, &.left {
+            width: 100%;
+            padding-left: 0;
+            border: none;
+        }
+    }
+
+    .images {
+        width:100%;
+        display: block;
+    }
+
+    .pullQuote {
+        margin: 25px auto;
+        p {
+            font-size: 3.5em;
+        }
+    }
+}
+
+///////////////////////////////////
+// featured content
+///////////////////////////////////
+
+.mobileOnly { display: block !important; }
+.noMobile { display: none !important; }
+
+.chapterNav {
+
+	.floatingElement {
+		width: 150px !important;
+		height: auto !important;
+		
+		&:first-of-type { margin-left: 75px; margin-right: 0; }
+		&:last-of-type { margin-left: 0; margin-right: 75px; }
+	}
+}
+
+.navIcons {
+	margin-top: 3.0rem;
+}
+
+.ctaWrapper {
+    a {
+        font-size: 3.75em;
+    }
+}
+
+///////////////////////////////////
+// footer
+///////////////////////////////////
+
+.footer {
+
+    .alsoLikeLinkWrap {
+
+        .linkWrapper {
+            padding-bottom: 21%;
+            width: 30%;
+            margin: 0 1%;
+        }
+
+        .rLink {
+            .linkTitleWrapper {
+                padding: 5px 10px;
+
+                .linkTitle {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
